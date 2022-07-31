@@ -1,0 +1,271 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&family=Oswald:wght@200;300;400&display=swap');
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    list-style: none;
+}
+/* contact whatsapp button */
+.strong{
+    display: flex;
+    gap: 3vh;
+    color: #000;
+}
+.base{
+    position: fixed;
+    bottom: 30px;
+    right:50px;
+    z-index:99;
+    display: inline-block;
+    gap: 2vh;
+}
+
+.base img{
+    max-width: 7vh;
+    gap: 3vh;
+    margin-right: -1vh;
+    border-radius: 10vh;
+    background: transparent;
+    animation: inOut .5s infinite alternate;
+    padding: 5px;
+}
+@keyframes inOut {
+    from {
+        transform: scale(1.2);
+    }
+    to{
+        transform:  scale(0.8);
+    }
+}
+.strong .base .cont{
+    background: #fff;
+    height: 6vh;
+    width:14vh;
+    float: left;
+    border-radius: 1vh;
+    margin-left: 3vh;
+    /* box-shadow: 2px 2px 2px 2px #ccc; */
+box-shadow: 1px 7px 14px -5px rgba(0,0,0,0.15);
+
+}
+.strong .base .cont h3{
+    text-align:center;
+    padding:  3px 1vh;
+    font-size: 16px;
+    font-weight: 400;
+}
+.strong .base .cont h2{
+    text-align:center ;
+    padding: 0vh 1vh;
+    font-size: 16px;
+    margin-top: -0.1vh;
+
+}
+
+/* Ending of whatsapp contact button */
+
+li,a,button{
+    font-weight: 300;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 30px 4%;
+    background: #000;
+    color:#fff;
+    height: 8vh;
+
+}
+.logo {
+    cursor: pointer;
+    font-size: 2vh;
+    letter-spacing: 0.7px;
+}
+.nav-links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav-links li a{
+    transition: all 0.3s ease 0s;
+    font-size: 12px;
+    font-weight: bold;
+}
+.nav-links li a:hover{
+color: #ccc;
+border: 2px solid #ccc;
+padding: 4px;
+border-radius: 8px;
+
+}
+header button {
+    background: #fff;
+    color: #000;
+    padding: 6px;
+    border-radius: 10px;
+    width: 12ex;
+    font-weight:500;
+}
+header button:hover{
+    opacity: 0.8;
+}
+
+/* Ending of the header  */
+
+/* online_notification */
+.wrapper {
+    position: absolute;
+    top:20px;
+    left:20px;
+    animation: show_toast 1s ease forwards;
+    cursor: pointer;
+}
+@keyframes show_toast {
+    0% {
+        transform: translateX(-100%);
+    }
+    40% {
+        transform: translateX(10%);
+    }
+    80%, 100% {
+        transform: translateX(20px);
+    }
+}
+
+/* Online notification that will hide it after some minute */
+.wrapper.hide{
+    animation: hide_toast 1s ease forwards;
+}
+@keyframes hide_toast {
+    0%{
+        transform: translateX(20px);
+    }
+    40% {
+        transform: translateX(10%);
+    }
+    80%, 100% {
+        opacity: 0;
+        pointer-events: none;
+        transform: translateX(-100%);
+    }
+}
+/* Ending of Online notification that will hide it after some minute */
+
+.wrapper .toast {
+    background: #fff;
+padding: 20px 15px 20px 20px;
+border-radius: 10px;
+border-left: 5px solid #ccc;
+box-shadow: 1px 7px 14px -5px rgba(0,0,0,0.15);
+width: 430px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.toast .content {
+    display: flex;
+    align-items: center;
+}
+.wrapper .toast.offline {
+    border-color: #ccc;
+}
+.wrapper .icon {
+    font-size: 25px;
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    padding-top: 1.3vh;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    background: #000;
+}
+.toast.offline .content .icon {
+    background: #fff;
+    color: #000;
+}
+.content .details {
+    margin-left: 15px;
+}
+.details span {
+    font-size: 20px;
+    font-weight: 500;
+}
+.details p{
+    color: #878787;
+
+}
+.toast .close-icon {
+    color: #878787;
+    font-size: 29px;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    padding-top: 0.8vh;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    background:#ccc;
+    transform: all 0.3 ease;
+}
+.close-icon:hover{
+    background: #efefef;
+}
+/* styling the body */
+.main {
+    background-image: url(/Assest/home-bg1.jpg);
+    height: 80vh;
+}
+.container {
+    padding-left:8vh;
+    padding-top: 20vh;
+   
+}
+.container h3{
+    font-size: 2.8vh;
+    color: black;
+}
+.container h2{
+    font-size: 5vh;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:#222;
+    color:transparent;
+    font-weight: bold;
+}
+.container p{
+    width: 56vh;
+    font-size: 1.5vh;
+    color: #222;
+    font-weight: bold;
+    margin-top: 1vh;
+}
+.container .buttons {
+    gap: 5vh;
+    padding: 3vh 0vh;
+}
+.container .buttons .btn {
+ width: 20vh;
+    color: #fff;
+height: 5vh;
+border-radius: 10px;
+border: none;
+background: #000;
+}
+.container .buttons .btn_pay {
+    width: 20vh;
+       color: #000;
+   height: 5vh;
+   /* font-weight: bold; */
+   border-radius: 10px;
+   border: 2px solid #000;
+   background: transparent;
+   }
