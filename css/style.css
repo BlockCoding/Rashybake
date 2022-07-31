@@ -272,4 +272,5 @@ background: #000;
    .container .buttons .btn_pay:hover {
     background: #fff;
     color: #000;
+    border: none;
    }
