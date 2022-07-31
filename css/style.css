@@ -269,3 +269,7 @@ background: #000;
    border: 2px solid #000;
    background: transparent;
    }
+   .container .buttons .btn_pay:hover {
+    background: #fff;
+    color: #000;
+   }
