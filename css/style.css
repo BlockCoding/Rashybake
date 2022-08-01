@@ -12,7 +12,7 @@
 }
 /* contact whatsapp button */
 body{
-    background: #000;
+    background: #ccc;
 }
 .strong{
     display: flex;
@@ -225,7 +225,7 @@ justify-content: space-between;
 /* styling the body */
 .main {
     /* background-image: url(/Assest/home-bg1.jpg); */
-    height: 66vh;
+    height: 78vh;
     background:#fff;
 }
 .container {
@@ -290,3 +290,82 @@ font-weight: bold;
     padding-right: 5vh;
    }
    
+   #myBtn {
+
+  position: fixed;
+  bottom: 30px;
+left: 50px;
+  /* z-index: 99; */
+  border: none;
+  outline: none;
+  /* background: linear-gradient(to right, var(--color-primary), var(--color-secondary), var(--color-ternary)); */
+background: #fff;
+  cursor: pointer;
+  border-radius: 24vh;
+  padding: 2vh;
+  box-shadow: 4px 10px 14px -5px rgba(0,0,0,0.15);
+  
+  }
+  #myBtn img{
+    width: 3vh;
+  }
+.flex-container {
+    height: 40vh;
+    background: #ccc;
+padding-left: 7vh;
+padding-right: 7vh;
+
+    display: flex;
+    margin: auto;
+    justify-content: center;
+gap: 3vh;
+}
+.flex-container .ads {
+    width: 50vh;
+    height: 30vh;
+    background: #F0F0F0;
+    border-radius: 4vh;
+    /* border-left:3px solid #636363; */
+    
+    
+}
+.flex-container .ads:hover {
+    border-right:4px solid #000;
+    box-shadow: 4px 10px 14px -5px rgba(0,0,0,0.15);
+transition: .5s ease-out;
+}
+.flex-container .ads img{
+width: 6vh;
+margin: auto;
+padding-top: 4vh;
+justify-content: center;
+display: flex;
+}
+.flex-container .ads h2{
+    text-align: center;
+    font-size: 3.3vh;
+    padding-top: 2vh;
+    color: 
+    #222;
+}
+#active{
+    background: #000;
+    color: #fff;
+}
+.flex-container .ads p{
+    text-align: center;
+    padding-top: 1vh;
+
+padding-left: 5vh;
+padding-right: 5vh;
+}
+#five {
+    font-size: 7vh;
+    /* margin: auto; */
+padding-top: 4vh;
+justify-content: center;
+display: flex;
+}
+#active h2{
+    color: #ccc;
+}
