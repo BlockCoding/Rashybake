@@ -383,3 +383,24 @@ display: flex;
     padding-left: 8vh;
     padding-top: 4vh;
 }
+.sales-picture {
+    display: flex;
+    padding-left: 7vh;
+    padding-right: 7vh;
+
+    padding-top: 4vh;
+gap: 3vh;
+margin: auto;
+justify-content: center;
+}
+.sales-picture .sale-main {
+background: #000;
+width: 45vh;
+height: 30vh;
+border-radius: 2vh;
+}
+.sales-picture .sale-main:hover{
+    content: "";
+    /* background: rgba(0, 0, 0, 0.048); */
+    object-fit: cover;
+}
