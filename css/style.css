@@ -377,7 +377,7 @@ display: flex;
 }
 .sales {
     background: #fff;
-    height: 50vh;
+    height: 80vh;
 }
 .sales h2{
     padding-left: 8vh;
@@ -396,11 +396,127 @@ justify-content: center;
 .sales-picture .sale-main {
 background: #000;
 width: 45vh;
-height: 30vh;
+height: 60vh;
 border-radius: 2vh;
+border-top:7px solid #ccc;
+}
+#boy{
+/* height: 58vh; */
+
+}
+#cakeb{
+    margin-top: 2.7vh;
+}
+.sales-picture .sale-main:hover{
+
 }
 .sales-picture .sale-main:hover{
     content: "";
     /* background: rgba(0, 0, 0, 0.048); */
     object-fit: cover;
+}
+.sales-picture .sale-main img {
+    width: 23vh;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-top: 2vh;
+}
+.sales-picture .sale-main .rate {
+    background: rgba(236, 232, 232, 0.315);
+    height: 28vh;
+    border-top-left-radius: 3vh;
+    border-top-right-radius: 3vh;
+    border-top:7px solid #fff;
+    border-bottom:7px solid #ccc;
+    border-bottom-left-radius: 2vh;
+    border-bottom-right-radius: 2vh;
+
+}
+#down{
+    margin-top: 1.3vh;
+}
+#top {
+    margin-top: -1vh;
+}
+.sales-picture .sale-main .rate h1{
+    font-size: 4vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    color: white;
+    font-weight: lighter;
+}
+.sales-picture .sale-main .rate h3{
+    text-align: center;
+    padding-top: 2vh;
+    color:#ccc;
+    letter-spacing: 1px;
+}
+.sales-picture .sale-main .rate em{
+    font-style: normal;
+    /* color: #000;
+    font-weight: bold; */
+}
+/* .sales-picture .sale-main .rate i{
+    font-size: 4vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    color: white;
+    font-weight: lighter;
+    padding-top: 2vh;
+} */
+.sales-picture .sale-main .rate .icons-star{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-top: 3vh;
+    gap: 1vh;
+    margin-top: -1.6vh;
+}
+.sales-picture .sale-main .rate .icons-star i{
+    font-size: 3vh;
+    
+}
+/* 
+.sales-picture .sale-main .rate .icons-star .checked{
+    color:red;
+}
+
+.sales-picture .sale-main .rate .icons-star em {
+    color: #F0F0F0;
+
+} */
+.btn_buttons{
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    padding-top: 2vh;
+}
+.btn_buttons button {
+    background: #000;
+    color: #fff;
+    width: 27vh;
+    height: 5vh;
+    border-radius: 1vh;
+    font-size: 1.9vh;
+       font-weight: bold;
+}
+.btn_buttons button:hover{
+    opacity: 0.8;
+
+}
+.sales-picture .sale-main .rate h4{
+    color: #ccc;
+    text-align: center;
+    padding-left: 3vh;
+    padding-right:3vh;
+    padding-top: 1vh;
 }
